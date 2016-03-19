@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  resources :sessions, only: [:new, :create, :destroy] 
+  root to: "todo_lists#index"
   
   get "/login" => "sessions#new", as: "login"
   delete "/logout" => "sessions#destroy", as: "logout"
-
+  
+  resources :sessions, only: [:new, :create, :destroy] 
   resources :users
   resources :profiles
 
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'todo_lists#index'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

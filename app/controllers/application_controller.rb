@@ -10,15 +10,15 @@ class ApplicationController < ActionController::Base
   protected
     def ensure_login
       # Always go to login page unless session contains
-      # reviewer_id
-      redirect_to login_path unless session[:user]
+      # user_id
+      redirect_to login_path unless session[:user_id]
     end
 
     def logged_in?
-      session[:user] # nil is false
+      session[:user_id] # nil is false
     end
 
     def current_user
-      @current_user ||= User.find(session[:user])
+      @current_user ||= User.find(session[:user_id])
     end
 end
