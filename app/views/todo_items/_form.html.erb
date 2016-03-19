@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :due_date %><br>
-    <%= f.date_select :due_date %>
-  </div>
-  <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :due_date %><br>
+    <%= f.date_select :due_date %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
@@ -26,18 +26,6 @@
   <div class="field">
     <%= f.label :completed %><br>
     <%= f.check_box :completed %>
-  </div>
-  <div class="field">
-    <%= f.label :null %><br>
-    <%= f.text_field :null %>
-  </div>
-  <div class="field">
-    <%= f.label :default %><br>
-    <%= f.text_field :default %>
-  </div>
-  <div class="field">
-    <%= f.label :todo_list_id %><br>
-    <%= f.text_field :todo_list_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

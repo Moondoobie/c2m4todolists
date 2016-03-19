@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Due date:</strong>
-  <%= @todo_item.due_date %>
+  <strong>Title:</strong>
+  <%= @todo_item.title %>
 </p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @todo_item.title %>
+  <strong>Due date:</strong>
+  <%= @todo_item.due_date %>
 </p>
 
 <p>
@@ -18,21 +18,6 @@
 <p>
   <strong>Completed:</strong>
   <%= @todo_item.completed %>
-</p>
-
-<p>
-  <strong>Null:</strong>
-  <%= @todo_item.null %>
-</p>
-
-<p>
-  <strong>Default:</strong>
-  <%= @todo_item.default %>
-</p>
-
-<p>
-  <strong>Todo list:</strong>
-  <%= @todo_item.todo_list %>
 </p>
 
 <%= link_to 'Edit', edit_todo_item_path(@todo_item) %> |
