@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
   resources :todo_items
-  resources :todo_items
-  resources :todo_items
-  resources :todo_items
-  resources :todo_items
   resources :todo_lists
   resources :profiles
   resources :users
